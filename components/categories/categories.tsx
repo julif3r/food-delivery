@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { CATEGORIES } from '../../constants/categories';
 import styles from '../../styles/Categories.module.scss';
 import { Category } from '../../types/category';
 

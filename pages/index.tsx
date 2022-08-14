@@ -1,6 +1,3 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import Categories from '../components/categories/categories'
 import Header from '../components/header/header'
@@ -32,7 +29,7 @@ export default function Home(props: HomepageProps) {
   useEffect(() => {
     const _categoryNames: string[] = getActiveCategoryNames(categories);
     setRestaurants(filterRestaurants(props.restaurants, _categoryNames, searchInput));
-  }, [categories, searchInput]);
+  }, [categories, searchInput, props.restaurants]);
 
   return (
     <>

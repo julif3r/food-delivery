@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import React, { EventHandler, useState } from 'react';
+import React from 'react';
 import styles from '../../styles/Header.module.scss';
-
 
 interface HeaderProps {
     input: string;

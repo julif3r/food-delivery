@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import { useState } from 'react';
-import { RESTAURANTS } from '../../constants/restaurants';
 import styles from '../../styles/Restaurants.module.scss';
 import { Category } from '../../types/category';
 import { Restaurant } from '../../types/restaurant';
