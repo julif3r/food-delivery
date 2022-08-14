@@ -1,10 +1,9 @@
-import { RESTAURANTS } from "../constants/restaurants";
 import { Category } from "../types/category";
 import { Restaurant } from "../types/restaurant";
 
-export const filterRestaurants = (categories: string[], input?: string): Restaurant[] => {
+export const filterRestaurants = (restaurants: Restaurant[], categories: string[], input?: string): Restaurant[] => {
     const _restaurants: Restaurant[] = [];
-    RESTAURANTS.forEach((restaurant: Restaurant) => {
+    restaurants.forEach((restaurant: Restaurant) => {
         const _matchCategories = restaurant.categories.filter((c: Category) => categories.includes(c.name));
         if (_matchCategories.length > 0) {
             const _catsNames: string[] = restaurant.categories.map((c: Category) => c.name);

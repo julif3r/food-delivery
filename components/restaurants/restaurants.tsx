@@ -70,6 +70,8 @@ export default function Restaurants(props: RestaurantsProps) {
                     </div>
                 })}
             </div>
+            {props.restaurants.length === 0 &&
+                <div className={styles.noData}>No restaurants found!</div>}
         </div>
     )
 }

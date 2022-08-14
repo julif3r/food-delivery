@@ -31,7 +31,7 @@ export default function Home(props: HomepageProps) {
 
   useEffect(() => {
     const _categoryNames: string[] = getActiveCategoryNames(categories);
-    setRestaurants(filterRestaurants(_categoryNames, searchInput));
+    setRestaurants(filterRestaurants(props.restaurants, _categoryNames, searchInput));
   }, [categories, searchInput]);
 
   return (

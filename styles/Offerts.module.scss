@@ -21,6 +21,12 @@
     margin-left: 15px;
 }
 
+.offertImage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .offertImageWrapper {
     position: relative;
     height: 188px;
@@ -67,17 +73,34 @@
     color: #83859c;
 }
 
-// Medium devices (tablets, 768px and down)
-@media (max-width: 992px) {
+
+// Mobile devices (smaller than tablets, 768px and down)
+@media (max-width: 768px) {
     .offers {
         flex-direction: column;
     }
     .desertsOffert {
         width: 100%;
         margin: 0 0 30px;
+        flex-direction: column-reverse;
     }
     .burgersOffert {
         width: 100%;
         margin: 0;
+        flex-direction: column-reverse;
+    }
+    .offertImage {
+        position: relative;
+        width: 100%;
+        height: 150px;
+    }
+    .offertContent{
+        position: relative;
+        padding: 0 15px;
+    }
+    .offertCategory {
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
 }
